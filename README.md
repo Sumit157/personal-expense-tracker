@@ -11,8 +11,19 @@
 - **Python**: For core application logic.
 - **SQLite**: As a lightweight database to store and retrieve expense data.
 
-## Installation
+## Usage
+- **Run the Application**: python expense_tracker.py
+- Personal Expense Tracker
+- **Add Expense**: Input the date, category, description, and amount.
+- **View Expenses**: Lists all expenses by ID, date, category, description, and amount.
+- **Update Expense**: Enter the ID of the expense to update, followed by new details.
+- **Delete Expense**: Enter the ID of the expense to delete.
 
-1. **Clone the Repository**
-   ```bash
-   git clone 
+## Database Structure
+- The SQLite database (expense_tracker.db) contains a single table expenses with the following fields:
+
+- id: Unique identifier (auto-incremented).
+- date: Date of the expense in YYYY-MM-DD format.
+- category: Category name (e.g., Food, Rent).
+- description: Brief description of the expense.
+- amount: Amount spent (as a decimal value).
